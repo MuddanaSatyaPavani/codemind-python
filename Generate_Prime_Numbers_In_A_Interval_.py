@@ -1,9 +1,12 @@
-a = int(input ())  
-b = int(input ())  
-for n in range (a, b + 1):  
-    if n > 1:  
-        for i in range (2, n):  
-            if (n % i) == 0:  
-                break  
-        else:  
-            print (n)  
+n=int(input())
+m=int(input())
+def prime(u):
+    f=0
+    for i in range(1,u+1):
+        if u%i==0:
+            f=f+1
+    if f==2:
+        return True
+for i in range(n,m+1):
+    if prime(i)==True:
+        print(i)
